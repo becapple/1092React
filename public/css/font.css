@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    background-image: url(../image/back.jpg);
+    background-size: cover;
+    background-position: 0 -50px;
+    height: 100vh;
+
+
+}
+.title{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4rem;
+    color: rgb(0, 225, 255);
+    position: absolute;
+    margin-left: 20vw;
+    margin-top: 30vh;
+}
+.background:hover .title{
+    display: none;
+}
+.background:hover .box{
+    height: 100vh;
+    width: calc(100vw / 3);
+}
+.background:hover .page{
+    opacity: 100%;
+}
+.box{
+    height: 0;
+    transition-property: all;
+    transition-duration: 0.4s;
+    background-color: rgb(63, 62, 62);
+    opacity: 75%;
+    display: flex;
+    position: absolute;
+    font-size: 0;
+}
+.box2{
+    margin-left: calc(100vw / 3);
+    background-color: rgb(44, 44, 44);
+    transition-duration: 0.6s;
+}
+.box3{
+    right: 0;
+    transition-duration: 1s;
+    background-color: rgb(70, 69, 69);
+}
+
+.page{
+    font-family: 'Roboto Mono', monospace;
+    list-style: none;
+    text-decoration: none;
+    line-height: 100vh;
+    position: absolute;
+    display: flex;
+    color: white;
+    margin-left: 200px;
+    font-size: 20px;
+    opacity: 0%;
+    transition: opacity 0.4s;
+}
+.page:hover{
+    font-size: 24px;
+    opacity: 100%;
+}
+.page1{
+    margin-left: 150px;
+}
+.page2{
+    transition-duration: 0.6s;
+}
+.page3{
+    transition-duration: 0.8s;
+}

@@ -1,0 +1,49 @@
+body{
+    background-color: #FFCDD2;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.header img{
+    width: 100vw;
+}
+.container{
+    max-width: 1280px;
+
+}
+
+.article{
+    display: flex;
+}
+.me{
+    background-image: url(../image/me.jpg);
+    height: 60vh;
+    width: 50vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 15vw;
+    margin-top: 80px;
+    filter:contrast(1.5);
+
+}
+.pra{
+    line-height: 20px;
+    font-family: 'Comfortaa', cursive;
+    position: relative;
+    top: 43vh;
+    color: #fff;
+    padding: 15px;
+    font-size: 14px;
+    text-indent: 15px;
+}
+.word{
+    margin-top: 80px;
+    line-height: 30px;
+    color: #4c4141;
+    opacity: 100%;
+    width: 500px;
+    padding-left: 15px;
+    letter-spacing: 5px;
+
+}

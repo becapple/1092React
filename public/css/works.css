@@ -1,0 +1,101 @@
+.box{
+    display: flex;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    color: #550088;
+    border-bottom: 2px solid #852b28;
+
+}
+
+.word1{
+    margin-top: 10px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    padding-left: 15px;
+    color: #000;
+}
+
+.btn{
+
+    width: 250px;
+    height: 220px;
+    position: relative;
+    background-size: contain;
+    margin: 25px;
+    padding: 0;
+    /* opacity: 1; */
+    filter: brightness(1);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.btn:hover{
+    filter:brightness(0.3);
+    /* opacity: 0.5; */
+}
+.btn2{
+    width: 150px;
+}
+
+.btn4{
+    background-image: url(../image/5.PNG);
+    width: 210px;
+    background-position: -10px 0;
+}
+.btn5{
+    background-image: url(../image/7.PNG);
+    width: 150px;
+    background-repeat: no-repeat;
+    height: 50px;
+}
+.btn6{
+    background-repeat: no-repeat;
+    height: 170px;
+}
+.btn7{
+    background-image: url(../image/10.PNG);
+    height: 100px;
+}
+.btn8{
+    background-image: url(../image/11.PNG);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 220px;
+}
+.btn9{
+    background-image: url(../image/list-2.PNG);
+    background-repeat: no-repeat;
+    width: 220px;
+
+}
+.btn10{
+    background-image: url(../image/list-3.PNG);
+    background-repeat: no-repeat;
+}
+.btn11{
+    background-image: url(../image/test.PNG);
+    background-repeat: no-repeat;
+
+}
+
+.listbox{
+    list-style-type: none;
+    height: 50vh;
+    width: 400px;
+    background-color: rgb(241, 172, 230);
+    font-size: 0;
+    border-bottom: 2px solid #550088;
+}
+
+.listbox-item{
+    font-size: 22px;
+    list-style: none;
+    border-bottom: 1px solid #fff;
+}
+.listbox-item-link{
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    color: rgba(66, 0, 50, 0.623);
+    user-select: none;
+}
+

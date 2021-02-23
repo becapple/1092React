@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+body{
+    margin: 0 ;
+    padding: 0;
+
+}
+
+.title1{
+    width: 70vw;
+    height: 15vh;
+    margin-top: 10px;
+    margin-left: 15vw;
+    background-color: #EF534F;
+}
+#titleLogo{
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20%;
+    width: 20%;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.title{
+    font-family: 'Roboto Mono', monospace;
+}
+.word{
+    font-family: 'Comfortaa', cursive;
+}
+
+.nav-list{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 15vw;
+    margin-top: 8vh;
+
+
+}
+.list{
+    list-style: none;
+    display: flex;
+    margin: 10px 50px;
+    padding: 10px;
+}
+
+.list-item-link{
+    text-decoration: none;
+    margin: 10px;
+    padding: 7px;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(255,255,255);
+    border-bottom: 3px solid  #852b28;
+}
+.list-item-link:hover{
+    background-color: #852b28;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.sublist{
+    border-radius: 10px;
+    z-index: 100;
+    position: absolute;
+    height: 320px;
+    width: 80px;
+    background-color: #852b28;
+    margin: 0;
+    padding: 0;
+    display: none;
+    list-style-type: none;
+}
+
+.sub:hover .sublist{
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 13px;
+    display: block;
+}
+
+.sublist-item{
+    list-style: none;
+    display: block;
+    line-height: 20px;
+    padding: 10px;
+    text-align: right;
+
+}
+.sublist-item:hover{
+    background-color:  #501918;
+
+}
+.sublist-item-link{
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    color: #FFF;
+
+}
+.footer{
+    background-color: #000;
+    color: #fff;
+    margin-top: 100%;
+    text-align: end;
+    line-height: 5px;
+    width: 70vw;
+    height: 20px;
+    margin-left: 15vw;
+}
+
+.all{
+    width: 70vw;
+    height: 100vh;
+    margin-top: 60px;
+    margin-left: 15vw;
+
+}
+
+.box{
+    width: 70vw;
+    height: 50vh;
+    margin-top: 10px;
+
+    background-color: #FB7E96;
+    border-radius: 10px;
+}
