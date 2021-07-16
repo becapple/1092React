@@ -1,38 +1,213 @@
-.App {
-  text-align: center;
+@import '../node_modules/antd/dist/antd.css';
+
+/* RWD Container */
+/* for LessonDetail page */
+.container-fluid{
+  width: 1280px;
+  height: auto;
+  align-self: center;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* normal one  */
+.container{
+  width: 100%;
+  height: auto;
+  align-self: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* setting */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #98c1d9;
+  color: #3d5a80;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.layout-header,
+.layout-footer {
+  height: auto;
+  background-color: #98c1d9;
+}
+
+.layout-content {
+  background-color: #293241;
+}
+
+/* header */
+.header{
+  padding: 10px 0;
+  display: flex;
+}
+
+.navbar-nav{
+  margin-left: 930px;
+}
+.navbar-item{
+  padding: 0 20px;
+  color :#293241;
+}
+
+.navbar-icon{
+  font-size: 18px;
+}
+.navbar-lessonCount{
+  margin-left: 50px;
+}
+@media(max-width: 667px){
+  .navbar-nav{
+    margin-left: 5px;
   }
-  to {
-    transform: rotate(360deg);
+  .ant-dropdown-link{
+    padding: 0 5px;
+
   }
+  .navbar-lessonCount{
+    margin-left: 5px;
+  }
+  .container-fluid{
+    width: 100%;
+    height: auto;
+    align-self: center;
+    display: block;
+  }
+}
+/* main */
+.topic{
+  text-align: center;
+  background-color:  #ee6c4d;
+  color:#e0fbfc;
+  height: 200px;
+  padding-top: 50px;
+}
+.main-size{
+  padding: 20px 100px;
+}
+.ACard{
+  width: 420px;
+}
+.lesson-list{
+  color: #3d5a80;
+}
+.lesson-list-item{
+  padding: 5px 0;
+}
+.card-more{
+  float: right;
+}
+.card-popover{
+  color: #98c1d9;
+}
+.card-trait{
+  padding: 3px 0;
+  color: #ee6c4d;
+
+}
+@media(max-width: 667px){
+  .main-size{
+    padding: 20px 35px;
+  }
+
+}
+/* lessondetail */
+
+.lessonDetail{
+  background-color: #e0fbfc;
+  height: auto;
+
+}
+.detail-content{
+  background-color: #e0fbfc;
+  color: #3d5a80;
+}
+.detail{
+
+  height: auto;
+  padding: 50px;
+  text-align: center;
+  background-color:  #ee6c4d;
+
+
+}
+.detail-title{
+  color: #293241;
+  font-style: bold;
+  font-size: 24px;
+  font-style: 600;
+}
+.detail-subIntro{
+  color: #293241;
+}
+.detail-list{
+  list-style: none;
+
+}
+.detail-timeLine{
+  padding: 50px;
+  width: auto;
+  height: 500px;
+}
+.detail-button{
+  margin-top: 10px;
+  background-color: #ee6c4d;
+  color: #e0fbfc;
+}
+.detail-about{
+  padding: 0 50px;
+}
+.detail-infro{
+  padding: 0 10px;
+}
+.detail-aboutClass{
+  padding: 15px 0;
+}
+
+@media(max-width: 667px){
+
+  .lesson-detail-list{
+    display: block;
+    width: 800px;
+    align-self: center;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .detail-timeLine{
+    display: block;
+    width: 800px;
+  }
+  .detail-comment,
+  .detail-aboutClass{
+    display: none;
+  }
+}
+
+/* CartModal */
+.modal-cart{
+  display: flex;
+  margin: 10px 0;
+}
+.cart-image{
+  width: 50px;
+  height: 50px;
+}
+.cart-detail{
+  color: #3d5a80;
+}
+.modal-content{
+  width: 200px;
+  height: auto;
+}
+.modal-end{
+  margin-left: 200px;
+}
+.modal-btn{
+  background-color: #3d5a80;
+  color: #ffffff;
+  margin-top: 25px;
+  margin-left: 150px;
+
 }
