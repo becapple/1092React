@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後台_使用者管理</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/rwd.css">
+
+
+</head>
+<body>
+    <div id="Header"></div>
+    <main>
+
+        <div class="container-fluid main-flex ">
+            <!-- 使用 checkbox 來做開關 -->
+            <input type="checkbox" name="" id="sideMenu-active" >
+            <div id="AsideNav_E"></div>
+            <!-- content -->
+            <div class="container content col-12" >
+                <i class="bi bi-columns"></i>
+                <div class="title"><i class="fas fa-bookmark" style="color: #A28C80; padding:0 10px;"></i> 功能權限管理</div>
+
+                <form class="form-group">
+                    <div class="tableShow mb-3">
+                        <div class="col-12 col-sm-7 col-md-5 col-lg-4 ">
+                            <select class="form-select  ">
+                                <option>系務管理</option>
+                                <option>學分班管理</option>
+                                <option>研究生口試管理</option>
+                                <option>畢業校友管理</option>
+                                <option>後台</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <div class="table-responsive">
+                    <table class="table table-striped ">
+                        <thead>
+                            <tr>
+                                <th class="sort">項次</th>
+                                <th>功能選單</th>
+                                <th>系統管理者</th>
+                                <th>主任</th>
+                                <th>教師</th>
+                                <th>研究生</th>
+                                <th>教務處</th>
+                                <th></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>基本資料建檔</td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="enable1" value="enable1" checked>
+                                        <label class="custom-control-label" for="enable1"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="enable2" value="enable2" checked>
+                                        <label class="custom-control-label" for="enable2"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="enable3" value="enable3" checked>
+                                        <label class="custom-control-label" for="enable3"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="enable4" value="enable4">
+                                        <label class="custom-control-label" for="enable4"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="enable5" value="enable5">
+                                        <label class="custom-control-label" for="enable5"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row justify-content-center m-0">
+                                        <a href="#" class="a-blue underl l mx-2" title="編輯">編輯</a>
+                                        <a href="#" class="a-blue underl a-red l mx-2" title="刪除">刪除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Cooperative Event Menu</td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="enable6" value="enable6" checked>
+                                        <label class="custom-control-label" for="enable6"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="enable7" value="enable7" checked>
+                                        <label class="custom-control-label" for="enable7"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="enable8" value="enable8" checked>
+                                        <label class="custom-control-label" for="enable8"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="enable9" value="enable9">
+                                        <label class="custom-control-label" for="enable9"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="enable10" value="enable10">
+                                        <label class="custom-control-label" for="enable10"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row justify-content-center m-0">
+                                        <a href="#" class="table-edit" title="編輯">編輯</a>
+                                        <a href="#" class="table-delete " style="padding-left:10px ;" title="刪除">刪除</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
+

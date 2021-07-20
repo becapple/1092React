@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A01</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/rwd.css">
+
+
+</head>
+<body>
+    <div id="Header"></div>
+    <main>
+        <div class="container-fluid main-flex ">
+            <!-- 使用 checkbox 來做開關 -->
+            <input type="checkbox" name="" id="sideMenu-active" >
+            <div id="AsideNav_A"></div>
+            <!-- content -->
+            <div class="container content col-12 ">
+                <i class="bi bi-columns"></i>
+                <div class="title"><i class="fas fa-bookmark" style="color: #7F7852; padding:0 10px;"></i> 基本資料建檔_研究生編輯</div>
+                    <!-- 研究生 -->
+                    <div class="data">
+                        <!-- data -->
+                        <div class="row "style="margin-top: -5px;">
+                            <div class="col-xl-5 col-lg-5 col-sm-12 row mb-sm-3">
+                                <label for="inputPassword" class="col-xl-3 col-lg-5 col-sm-2 col-form-label">學年度</label>
+                                <div class="col-xl-6 col-lg-12 col-sm-10">
+                                    <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-sm-12 row mb-sm-3">
+                                <label for="inputPassword" class="col-xl-3 col-lg-5 col-sm-2 col-form-label">學制</label>
+                                <div class="col-xl-6 col-lg-12 col-sm-10">
+                                <select class="form-select" aria-label="學制">
+                                    <option selected>博士</option>
+                                    <option value="1">碩士</option>
+                                    <option value="2">碩專</option>
+                                    <option value="3">外籍博士</option>
+                                    <option value="4">外籍碩士</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row "style="margin-top: -5px;">
+                            <div class="col-xl-5 col-lg-5 col-sm-12 row mb-sm-3">
+                                <label for="inputPassword" class="col-xl-3 col-lg-5 col-sm-2 col-form-label">學號</label>
+                                <div class="col-xl-6 col-lg-12 col-sm-10">
+                                    <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-sm-12 row mb-sm-3">
+                                <label for="inputPassword" class="col-xl-3 col-lg-5 col-sm-2 col-form-label">姓名</label>
+                                <div class="col-xl-6 col-lg-12 col-sm-10">
+                                    <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row "style="margin-top: -5px;">
+                            <div class="col-xl-5 col-lg-5 col-sm-12 row mb-sm-3">
+                                <label for="inputPassword" class="col-xl-3 col-lg-5 col-sm-2 col-form-label">身分證</label>
+                                <div class="col-xl-6 col-lg-12 col-sm-10">
+                                    <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-sm-12 row mb-sm-3">
+                                <label for="inputPassword" class="col-xl-3 col-lg-5 col-sm-2 col-form-label">生日</label>
+                                <div class="col-xl-6 col-lg-12 col-sm-10">
+                                    <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row "style="margin-top: -5px;">
+                            <div class="col-xl-5 col-lg-5 col-sm-12 row mb-sm-3">
+                                <label for="inputPassword" class="col-xl-3 col-lg-5 col-sm-2 col-form-label">手機電話</label>
+                                <div class="col-xl-6 col-lg-12 col-sm-10">
+                                    <input class="form-control" type="text" placeholder="09xxxxxxxx" aria-label="default input example">
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-sm-12 row mb-sm-3">
+                                <label for="inputPassword" class="col-xl-3 col-lg-5 col-sm-2 col-form-label">電子信箱</label>
+                                <div class="col-xl-6 col-lg-12 col-sm-10">
+                                    <input class="form-control" type="text" placeholder="name@gmail.com" aria-label="default input example">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row "style="margin-top: -5px;">
+                            <div class="col-xl-5 col-lg-5 col-sm-12 row mb-sm-3">
+                                <label for="inputPassword" class="col-xl-3 col-lg-5 col-sm-2 col-form-label">服務單位</label>
+                                <div class="col-xl-6 col-lg-12 col-sm-10">
+                                    <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-sm-12 row mb-sm-3">
+                                <label for="inputPassword" class="col-xl-3 col-lg-5 col-sm-2 col-form-label">職稱</label>
+                                <div class="col-xl-6 col-lg-12 col-sm-10">
+                                    <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row "style="margin-top: -5px;">
+                            <div class="col-xl-5 col-lg-5 col-sm-12 row mb-sm-3">
+                                <label for="inputPassword" class="col-xl-3 col-lg-5 col-sm-2 col-form-label">通訊地址</label>
+                                <div class="col-xl-9 col-lg-12 col-sm-10">
+                                    <input class="form-control" type="text" placeholder="406" aria-label="default input example">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2 col-1 mx-auto">
+                            <a href="./系務管理_A01.html" class="btn btn-save ">儲存 <span><i class="fas fa-hand-point-left"></i></span></a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
+

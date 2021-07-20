@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    text-decoration: none;
+    font-size: 16px;
+    color: #797979;
+    font-family:'Roboto', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* homePage */
+.bg-image{
+    height: 100vh;
+    width: 100vw;
+    z-index: -10;
+    position: absolute;
+}
+/* .image1{
+    z-index: -1;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 650px;
+    transform: rotate(30deg);
+    opacity: 0.69;
+}
+.image2{
+    position: absolute;
+    width: 550px;
+    height: auto;
+    margin-top: 150px;
+    margin-left: 150px;
+    transform: rotate(345deg);
+}
+.image3{
+    opacity: 0.92;
+    z-index: -1;
+    position: absolute;
+    width: 300px;
+    height: auto;
+    margin-top: 450px;
+    margin-left: 450px;
+    transform: rotate(15deg);
+} */
+/* homePage-navbar */
+.navbar-svg{
+    width: 200px;
+    padding: 5px;
+}
+.navbar-apartment{
+    font-weight: bold;
+    font-size: 30px;
+    color: #66A5BA;
+    padding: 5px;
+    margin-top: 3px;
+}
+/* homePage-main */
+.home-name{
+    color: #0E4946;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.login{
+    float: right;
+    padding: 50px ;
+    padding-left: 150px;
+}
+
+/* button-log */
+.btn-log{
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 30px;
+    margin-bottom: 10px;
+    background-color: #66A5BA;
+    color: #DDEAEA;
+    border-radius: 5px;
+}
+.btn-log:hover{
+    text-decoration: none;
+    background-color: #DDEAEA;
+    color: #66A5BA;
+}
+/* header */
+
+.navbar-bg{
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+}
+
+.nav-item{
+    list-style: none;
+    display: inline-flex;
+    float: right;
+}
+.name{
+    width: 200px;
+    /* justify-self: center;
+    padding: 8px 0; */
+    color: #27606D;
+    font-weight: bold;
+    font-size: 14px;
+}
+.hello{
+    padding: 8px;
+    position: absolute;
+}
+.nav-bar-link{
+    margin: 0 20px;
+}
+.nav-bar-link:link, .nav-bar-link:visited{
+    color: #7B8389;
+}
+
+.nav-bar-link:hover{
+    color: #33538A;
+    font-weight: bold;
+}
+
+/* button-sign */
+.btn-sign{
+    float: right;
+    margin-left: -5px;
+    text-decoration:underline;
+    color: #33538A;
+    font-size: 14px;
+}
+.btn-sign:hover{
+    text-decoration: none;
+    color: #0D766C;
+}
+/* navbar-aside */
+
+.sideMenu {
+    position: absolute;
+    margin-left: 0;
+	width: 220px;
+	height: 100vh;
+	background-color: #DDEAEA;
+	border-right: 3px solid #d1d1d1;
+	display: flex;
+	flex-direction: column;
+    padding: 5px;
+	box-shadow: 2px 0 4px #7B8389;
+	position: relative;
+    /* label 定位在這個上 */
+	transform: translateX(-100%);
+	transition: 0.5s;
+}
+#AsideNav_A, #AsideNav_E {
+    position: absolute;
+
+}
+
+.nav-aside-name{
+    color: #DDEAEA;
+    background-color: #33538A;
+    font-weight: bold;
+    padding: 10px 10px;
+
+}
+.nav-aside-link{
+    text-decoration: none;
+    display: block;
+	color: #66A5BA;
+	padding: 10px 10px;
+	position: relative;
+}
+
+.nav-aside-link:link, .nav-aside-link:visited{
+    color: #33538A;
+}
+.nav-aside-link:hover{
+    background-color: #66A5BA;
+    color: #DDEAEA;
+    font-weight: bold;
+}
+.nav-aside-link::before{
+    content: "";
+	position: absolute;
+	border-top: 1px dashed #33538A;
+	left: 10px;
+	right: 10px;
+	top: 0px;
+}
+
+.aside-label {
+    width: 35px;
+    height: 80px;
+    background-color: #d1d1d1;
+    color: #686666;
+    /* // 絕對定位在 sideMenu 上 */
+    position: absolute;
+    right: -35px;
+    top: 10%;
+    margin: auto;
+    padding: 3px;
+    line-height: 25px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 2px 0 4px #7B8389;
+}
+
+/* asideNav-animation-setting */
+#sideMenu-active:checked + #AsideNav_A .sideMenu {
+	transform: translateX(0);
+	/* 當我點擊 sideMenu 時，checkbox 會啟動 id，讓側邊選單跑出來 */
+
+}
+#sideMenu-active:checked + #AsideNav_A .sideMenu .fa-angle-right{
+	transform: scaleX(-1);
+    /* // 使 label 裡的圖案橫向反轉 */
+}
+#sideMenu-active:checked + #AsideNav_E .sideMenu {
+	transform: translateX(0);
+	/* 當我點擊 sideMenu 時，checkbox 會啟動 id，讓側邊選單跑出來 */
+
+}
+#sideMenu-active:checked + #AsideNav_E .sideMenu .fa-angle-right{
+	transform: scaleX(-1);
+    /* // 使 label 裡的圖案橫向反轉 */
+}
+#sideMenu-active:checked ~ .content{
+	width: 80%;
+    transform: translateX( 100px );
+    transition: transform 500ms;
+
+}
+
+#sideMenu-active {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+
+
+/* main */
+.main-flex{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    margin-top: -35px;
+    padding: 10px 25px;
+    width: 100%;
+}
+.title{
+    margin: 20px 0;
+    padding: 5px;
+    background-color: #F1DBB1;
+    color: #A28C80;
+    width: auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+label{
+    font-weight: bold;
+    font-size: 18px;
+}
+.data{
+    padding: 10px;
+    margin-left: 35px;
+}
+
+/* nav-tab */
+.nav-tabs .nav-tab-link {
+    border: 0;
+    color: #727272;
+}
+
+.nav-tabs .nav-tab-link.active {
+    background: #DDEAEA;
+}
+
+.nav-tabs .nav-item.show .nav-tab-link,
+.nav-tabs .nav-tab-link.active {
+    color: #7B8389;
+}
+
+.nav-tabs {
+    border-bottom: 2px solid #DDEAEA;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+/* tab-plane */
+.tab-content{
+    margin-top: 10px;
+    padding: 10px;
+}
+/* button-save */
+.btn-save{
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 30px;
+    margin-bottom: 10px;
+    background-color: #66A5BA;
+    color: #DDEAEA;
+    border-radius: 5px;
+    margin-left: -250px;
+}
+.btn-save:hover{
+    text-decoration: none;
+    background-color: #DDEAEA;
+    color: #66A5BA;
+}
+
+/* button-search */
+.btn-search{
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 30px;
+    margin-bottom: 10px;
+    background-color: #DDEAEA;
+    color: #66A5BA;
+    border-radius: 5px;
+
+
+}
+.btn-search:hover{
+    text-decoration: none;
+    background-color: #66A5BA;
+    color: #DDEAEA;
+}
+/* button-plus */
+.btn-plus{
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 30px;
+    background-color: #F1DBB1;
+    color: #A28C80;
+    border-radius: 5px;
+}
+.btn-plus:hover{
+    text-decoration: none;
+    background-color: #A28C80;
+    color: #F1DBB1;
+}
+/* table */
+.table{
+    text-align: center;
+}
+
+.table-plus th{
+    background-color: #DDEAEA;
+    color: #7B8389;
+    font-weight: bold;
+}
+thead  {
+    background-color: #F1DBB1;
+    color: #A28C80;
+    font-weight: bold;
+}
+tbody{
+    height: 45px;
+    color: #16191b;
+}
+.table-edit{
+    text-decoration: none;
+    color: #33538A;
+}
+.table-delete{
+    text-decoration: none;
+    color: #33538A;
+}
+a{
+    text-decoration: none;
+    color: #33538A;
+}
+.tableShow{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+.table-flex{
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+}
+/* select */
+.shortSelect{
+    width: 65px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+/* form */
+textarea{
+    height: 100px;
+}
+
